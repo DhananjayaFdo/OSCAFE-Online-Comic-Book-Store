@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Kanit&display=swap');
+ :root {
+    --mainColor: #202020;
+    --whiteFont: #FFFFFF;
+    --RedColor: #e7242a;
+}
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Boogaloo';
+    box-sizing: border-box;
+}
+
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--mainColor);
+}
+
+.signup_section{
+    height: 30rem;
+    width: 50rem;
+    display: flex;
+}
+
+
+
+.leftSide{
+    width: 25rem;
+    height: 30rem;
+    background-color: #202020;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup_form{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.form_inputs{
+    height: 25rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.with_error_container{
+    margin-bottom: 15px;
+}
+
+.error{
+    display: none;
+}
+
+
+.container{
+    width: 20rem;
+    margin-bottom: 5px;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 0px 5px;
+
+}
+
+.container i{
+    width: 30px;
+    text-align: center;
+    color: white;
+}
+
+.leftSide a{
+    color: white;
+}
+
+
+
+.container input{
+    border: none;
+    outline: none;
+    background-color: none;
+    width: 15rem;
+    padding: 10px 10px;
+    background-color: transparent;
+    color: white;
+}
+
+.submit_btn{
+    margin-top: 20px;
+    width: 20rem;
+    padding: 10px;
+}
+
+
+.alredyhaveAccount{
+    text-align: center;
+}
+
+.rightSide{
+    width: 25rem;
+    height: 30rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rightSide a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.signup_headlines{
+    width: 15rem;
+    text-align: center;
+}
+
+.rightSide_head{
+    font-size: 4rem;
+}
+
+.error{
+    color: #e7242a;
+}
+
+.forget_password_section{
+    height: 30rem;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid white;
+    color: white;
+}
+
+.form_head{
+    height: 5rem;
+    margin-top: 5rem;
+    margin-bottom: 3.5rem;
+}
+
+.form_head h1{
+    font-size: 3rem;
+}
+
+.forget_password_section .form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form .input{
+        height: 2rem;
+        outline: none;
+        width: 20rem;
+}
+
+.form .email{
+    padding: .5rem;
+    margin-bottom: .5rem;
+}
+
+.submit{
+    background-color: transparent;
+    text-align: center;
+    align-items: center;
+    margin-top: 2rem;
+    color: white;
+    border: 1px solid white;
+    margin-bottom: 5.5rem;
+}
+
+.submit:hover{
+    background-color: var(--whiteFont);
+    color: var(--mainColor);
+}
+
+.form_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form_div .home a{
+    text-decoration: none;
+    color: white;
+}
+
+.form_div .home:hover{
+    font-size: 1.5rem;
+}
+
+.errorEmail{
+    color: var(--RedColor);
+}

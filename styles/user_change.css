@@ -1,0 +1,73 @@
+:root {
+    --mainColor: #202020;
+    --whiteFont: #FFFFFF;
+    --RedColor: #e7242a;
+}
+
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.user_details_con{
+    border: .2rem solid var(--whiteFont);
+    padding: 3rem;
+}
+
+.user_details{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.user_details p{
+    margin-bottom: .6rem;
+}
+
+.user_passchange{
+    text-align: center;
+}
+
+.user_passchange h3{
+    margin-bottom: 1rem;
+}
+
+.user_passchange input{
+    padding: .5rem;  
+    color: var(--whiteFont);
+}
+
+.oldpass{
+    margin-bottom: 1rem;
+    background-color: transparent;
+    border: .2rem solid var(--whiteFont);
+    outline: none;
+    
+}
+
+.newpass{
+    display: flex;
+    justify-content: centers;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.newpass input{
+    background-color: transparent;
+    border: .2rem solid var(--whiteFont);
+    outline: none;
+}
+
+
+.submit_btn{
+    background-color: transparent;
+    color: white;
+    border: .2rem solid var(--whiteFont);
+    outline: none;
+    margin-top: .5rem;
+}
+
+.submit_btn:hover{
+    background-color: var(--RedColor);
+}

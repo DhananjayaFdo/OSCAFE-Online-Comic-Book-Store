@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+:root {
+    --mainColor: #202020;
+    --whiteFont: #FFFFFF;
+    --RedColor: #e7242a;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu';
+}
+
+body{
+    background-color: var(--mainColor);
+}
+
+header {
+    height: 60px;
+    background: #2f3640;
+}
+
+.inner-width {
+    max-width: 1000px;
+    padding: 0 10px;
+    margin: auto;
+}
+
+.logo {
+    float: left;
+    padding: 15px 0;
+}
+
+.logo p{
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.navigation-menu {
+    float: right;
+    display: flex;
+    align-items: center;
+    min-height: 60px;
+}
+
+.navigation-menu a {
+    margin-left: 10px;
+    color: #ddd;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 12px 20px;
+    border-radius: 4px;
+    transition: .3s linear;
+    text-decoration: none;
+}
+
+.navigation-menu a:hover {
+    background: #fff;
+    color: #2f3640;
+    transform: scale(1.1);
+}
+
+.navigation-menu i {
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+.home {
+    color: #ff6b6b;
+}
+
+.about {
+    color: #1dd1a1;
+}
+
+.hero {
+    color: #feca57;
+}
+
+.cart {
+    color: #6021e0;
+}
+
+.fa-user {
+    color: #0abde3;
+}
+
+.search {
+    color: lightgreen;
+}
+
+.menu-toggle-btn {
+    float: right;
+    height: 90px;
+    line-height: 60px !important;
+    color: #fff;
+    font-size: 26px;
+    display: none !important;
+    cursor: pointer;
+}
+
+.form_container{
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 65vh;
+    width: 65vh;
+    gap: 20px;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+
+.form h1{
+    margin-bottom: 10px;
+    color: white;
+    font-family: "Kanit";
+}
+
+form input, .select_div{
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: var(--mainColor);
+}
+
+.select_div{
+    width: 45vh;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    color: white;
+}
+
+.input{
+    width: 55vh;
+    height: 30px;
+    padding: 5px;
+    color: white;
+}
+label{
+    padding: 5px;
+}
+
+select{
+    margin-left: 10px;
+    padding: 5px;
+    background-color: var(--mainColor);
+    color: white;
+}
+
+option{
+    background-color: var(--mainColor);
+    color: white;
+}
+
+.file{
+    width: 45vh;
+    padding: 10px 10px;
+    color: white;
+}
+
+.submit{
+    padding: 10px 30px;
+    color: white;
+    font-weight: bold;
+}
+
+.submit:hover{
+    background-color: white;
+    color: var(--mainColor);
+}
+
+.marvel_comics{
+    box-sizing: border-box;
+    margin: 10px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 200px);
+    grid-auto-rows: 350px;
+    padding: auto;
+    justify-content: space-evenly;
+    padding-top: 30px;
+    gap: 10px;
+}
+.item{
+    background-color: white;
+}
+
+.item_image img{
+    width: 100%;
+    height: 250px;
+}
+
+
+.item_name_price{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 5px 15px 5px;
+}
+
+.item_name{
+    font-weight: bold;
+    color: #202020;
+}
+
+.item_price{
+    font-weight: bold;
+    color: #202020;
+}
+
+.item_cart_qut{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn{
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #e7242a;
+    border: none;
+    color: white;
+}
+
+.orders{
+    color: white;
+    margin: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 24rem);
+    justify-content: center;
+    gap: 1rem;
+}
+
+.box{
+    border: .2rem solid white;
+    border-radius: 20% 0 20% 0;
+    padding: 2rem;
+}
+
+.box p{
+    color: #0abde3;
+    margin: .3rem;
+    font-weight: bold;
+    margin-bottom: .3rem;
+}
+
+.box span{
+    color: white;
+    font-weight: normal;
+}
+
+.box form{
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.option-btn{
+    padding: 0 1rem;
+    color: var(--whiteFont);
+}
+
+.option-btn:hover{
+    background-color: #0abde3;
+}
+
+.delete_div{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.box a{
+    text-decoration: none;
+    color: white;
+    background-color: var(--RedColor);
+    padding: .5rem 1.5rem;
+}
+
+.users, .dashboard{
+    margin: 1.5rem;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 17rem);
+    gap: 1rem;
+    justify-content: center;
+}
+
+.dashboard{
+    gap: 3rem;
+}
+
+.dashboard div{
+    border-radius: 0% 20% 0% 20%;
+    text-align: center;
+    padding: 1rem;
+    border: .3rem solid white;
+}
+
+.dashboard .p1{
+    font-size: 4rem;
+}
+
+.dashboard .p2{
+    font-size: 2rem;
+}
+
+.users div{
+    padding: .5rem;
+    border: 1px solid white;
+}
+
+.users p{
+    margin-bottom: .5rem;
+    color: #0abde3;
+}
+
+.users form{
+    margin-top: .7rem;
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.users span{
+    color: var(--whiteFont);
+}
+
+.users input{
+    padding: 0 1rem;
+    color: white;
+}
+
+.users_unavailable{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.users_unavailable p{
+    padding: .5rem;
+    border: 1px solid white;
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+@media screen and (max-width:890px) {
+
+
+    .cart_details .each{
+        padding: .5rem 2rem;
+        font-size: .7rem;
+    }
+
+    .menu-toggle-btn {
+        display: block !important;
+    }
+    .navigation-menu {
+        position: fixed;
+        width: 100%;
+        max-width: 400px;
+        background: #172b4d;
+        top: 90px;
+        right: 0;
+        display: none;
+        padding: 20px 40px;
+        box-sizing: border-box;
+    }
+    .navigation-menu::before {
+        content: "";
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #172b4d;
+        position: absolute;
+        top: -10px;
+        right: 10px;
+    }
+    .navigation-menu a {
+        display: block;
+        margin: 10px 0;
+    }
+    .navigation-menu.active {
+        display: block;
+    }
+}

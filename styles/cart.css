@@ -1,0 +1,30 @@
+:root {
+    --mainColor: #202020;
+    --whiteFont: #FFFFFF;
+    --RedColor: #e7242a;
+    --mainGreen: #4cb73a;
+    --mainYello: #e5d335;
+}
+
+.item_imcrease{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem .5rem;
+    border: 1px solid white;
+}
+
+.cal{
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    padding: 0rem .3rem;
+    margin: 0rem .2rem;
+}
+
+.cal:hover{
+    background-color: var(--RedColor);
+}

@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #202020;
+}
+
+.searchField{
+    margin: 10px 50px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.searchField input{
+    height: 40px;
+    width: 500px;
+    padding: 5px;
+    border: none;
+}
+
+.searchField button{
+    height: 40px;
+    width: 60px;
+    outline: none;
+    border: none;
+    background-color: #e7242a;
+}
+
+.searchField i{
+    color: white;
+    font-size: 15px;
+}
+
+.item_display{
+    height: 80vh;
+    background-color: white;
+}
+
+
+
+
+.itemDisplay{
+    height: 60vh;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.item{
+    height: 55vh;
+    width: 40vh;
+    background-color: white;
+    padding: 5px;
+}
+
+.item_image{
+    height: 40vh;
+    background-color: #202020;
+}
+
+.item_name_price{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 5px 15px 5px;
+}
+
+.item_name{
+    font-weight: bold;
+    color: #202020;
+}
+
+.item_price{
+    font-weight: bold;
+    color: #202020;
+}
+
+.item_cart_qut{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.quty{
+    padding: 3px 5px;
+    width: 50px;
+    height: 30px;
+    font-size: 20px;
+}
+
+
+.btn{
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #e7242a;
+    border: none;
+    color: white;
+}
+
+
+

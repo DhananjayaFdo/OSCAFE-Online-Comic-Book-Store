@@ -1,0 +1,753 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Kanit&display=swap'); 
+
+:root {
+    --mainColor: #202020;
+    --whiteFont: #FFFFFF;
+    --RedColor: #e7242a;
+}
+
+@font-face {
+    font-family: avengers;
+    src: url("assets/fonts/AVENGEANCE HEROIC AVENGER.ttf");
+}
+
+@font-face {
+    font-family: DCEU;
+    src: url("assets/fonts/JUSTICE LEAGUE.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Boogaloo';
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--mainColor);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+}
+
+header {
+    height: 60px;
+    background: #2f3640;
+}
+
+.inner-width {
+    max-width: 1200px;
+    padding: 0 10px;
+    margin: auto;
+}
+
+.logo {
+    float: left;
+    padding: 15px 0;
+}
+
+.logo p {
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.navigation-menu {
+    float: right;
+    display: flex;
+    align-items: center;
+    min-height: 60px;
+}
+
+.navigation-menu a {
+    margin-left: 10px;
+    color: #ddd;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 12px 20px;
+    border-radius: 4px;
+    transition: .3s linear;
+}
+
+.navigation-menu a:hover {
+    background: #fff;
+    color: #2f3640;
+    transform: scale(1.1);
+}
+
+.navigation-menu i {
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+.home {
+    color: #ff6b6b;
+}
+
+.about {
+    color: #1dd1a1;
+}
+
+.hero {
+    color: #feca57;
+}
+
+.cart {
+    color: #6021e0;
+}
+
+.Subscription {
+    color: #0abde3;
+}
+
+.search {
+    color: lightgreen;
+}
+
+.menu-toggle-btn {
+    float: right;
+    height: 90px;
+    line-height: 60px !important;
+    color: #fff;
+    font-size: 26px;
+    display: none !important;
+    cursor: pointer;
+}
+
+.show_banner {
+    background-position: -10;
+    height: 60vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    background-color: #202020b4;
+    background-blend-mode: multiply;
+}
+
+.show_banner_div {
+    position: relative;
+    top: -30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    text-align: center;
+}
+
+.show_banner_div h1 {
+    color: white;
+    font-size: 10rem;
+    font-family: 'Kanit';
+}
+
+.show_banner_div p {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: -30px;
+}
+
+.social_Media {
+    margin-top: 17px;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social_Media a {
+    margin: 0px 30px;
+}
+
+.social_Media i {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.fa-facebook:hover {
+    color: #0abde3;
+}
+
+.fa-instagram:hover {
+    color: #ff6b6b;
+}
+
+.fa-discord:hover {
+    color: #6021e0;
+}
+
+.fa-twitter:hover {
+    color: #0abde3;
+}
+
+.fa-linkedin-in:hover {
+    color: #0072b1;
+}
+
+.fa-pinterest-p:hover {
+    color: #c8232c;
+}
+
+.fa-tiktok:hover {
+    color: aquamarine;
+}
+
+.fa-user:hover{
+    color: #ff6b6b;
+}
+
+.sectionTwo {
+    height: 70vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sectionTwo div {
+    float: right;
+    width: 720px;
+    text-align: center;
+    margin-top: 120px;
+}
+
+.sectionTwo div p {
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.sectionTwo div p span {
+    font-size: 50px;
+    font-family: avengers;
+    color: #e7242a;
+}
+
+.DiscoverMoreBTN {
+    margin-top: 30px;
+    height: 40px;
+    width: 130px;
+    background-color: transparent;
+    border: 1px solid white;
+    outline: none;
+    color: white;
+    font-weight: bold;
+}
+
+.DiscoverMoreBTN:hover {
+    border: none;
+    background-color: #e7242a;
+}
+
+.marvel_comics, .cart_item_sectio{
+    box-sizing: border-box;
+    margin: 10px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 200px);
+    grid-auto-rows: 350px;
+    padding: auto;
+    justify-content: space-evenly;
+    padding-top: 30px;
+    gap: 10px;
+}
+
+.cart_item_sectio{
+    margin-left: 1rem;
+    margin-bottom: 3rem;
+    min-width: 65rem;
+    justify-content: start;
+}
+
+.cart_page{
+    display: flex;
+}
+
+.cart_total_display{
+    margin: 2.5rem 1rem;
+    height: 30rem;
+    width: 20rem;
+    color: var(--whiteFont);
+    font-weight: bold;
+}
+
+.cart_collection{
+    margin: 1rem;
+}
+
+.cart_collection_div{
+    padding: .3rem;
+    display: flex;
+}
+
+.cart_collection_div div{
+    padding: .5rem;
+}
+
+.left{
+    width: 8.5rem;
+}
+
+.right{
+    width:  6rem;
+}
+
+.checkOut_btn{
+    text-align: center;
+    width: 14rem;
+    margin-top: 3rem;
+}
+
+.checkOut_btn a{
+    padding: .5rem 2rem;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.checkOut_btn a:hover{
+    background-color: var(--RedColor);
+    color: var(--whiteFont);
+    border: 2px solid var(--RedColor);
+}
+
+
+.item{
+    background-color: white;
+}
+
+.item_image img{
+    width: 100%;
+    height: 250px;
+}
+
+
+.item_name_price{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 5px 15px 5px;
+}
+
+.item_name{
+    font-weight: bold;
+    color: #202020;
+}
+
+.item_price{
+    font-weight: bold;
+    color: #202020;
+}
+
+.item_cart_qut{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.quty{
+    padding: 3px 5px;
+    width: 50px;
+    height: 30px;
+    font-size: 20px;
+}
+
+
+.btn{
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #e7242a;
+    border: none;
+    color: white;
+}
+
+.sectionFive {
+    height: 70vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sectionFive div {
+    width: 650px;
+    text-align: center;
+    padding-top: 120px;
+}
+
+.sectionFive div p {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.sectionFive div p span {
+    font-size: 50px;
+    font-family: DCEU;
+    color: #e7242a;
+}
+
+.ComicBookSection {
+    height: 250px;
+    width: 98%;
+    margin: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ComicBookSection .item {
+    height: 250px;
+    width: 200px;
+    background-color: #ffffff;
+    margin-right: 10px;
+}
+
+
+.backToHome {
+    background-color: var(--mainColor);
+    background-blend-mode: multiply;
+    height: 70vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.logo {
+    font-size: 70px;
+}
+
+.backToHome p {
+    font-size: 25px;
+}
+
+.subscriptionDiv {
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.subscriptionHead {
+    text-align: center;
+    padding: 30px 0px 30px 0px;
+    font-size: 40px;
+}
+
+.subscriptionHead p {
+    color: white;
+}
+
+.subscriptionPlan {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.subscriptionPlan div {
+    margin: 0px 10px 0px 10px;
+    height: 40vh;
+    width: 250px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.subscriptionPlan .Sone {
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.silver .Sone {
+    background-color: #e7242a;
+}
+
+.gold .Sone {
+    background-color: #267e30;
+}
+
+.diamond .Sone {
+    background-color: #9b6c10;
+}
+
+.silver .Sone p,
+.gold .Sone p,
+.diamond .Sone p {
+    color: white;
+    font-size: 25px;
+}
+
+.Stwo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+}
+
+.Stwo label {
+    font-size: 30px;
+}
+
+.Stwo span {
+    font-size: 20px;
+}
+
+.btnSec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20%;
+}
+
+.btnSec p {
+    font-size: 20px;
+    color: var(--mainColor);
+    padding: 10px 30px;
+    border: 2px solid var(--mainColor);
+    border-radius: 10px 0px 10px 0px;
+}
+
+.btnSec p:hover {
+    background-color: var(--mainColor);
+    color: white;
+}
+
+.kit {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.kit p {
+    margin-top: 10px;
+}
+
+.searchField {
+    margin: 10px 50px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchField input {
+    height: 40px;
+    width: 500px;
+    padding: 5px;
+    border: none;
+}
+
+.searchField button {
+    height: 40px;
+    width: 60px;
+    outline: none;
+    border: none;
+    background-color: white;
+}
+
+.searchField i {
+    color: #202020;
+}
+
+.cart_details , .message{
+    display: flex;
+    padding: 2rem 5rem;
+    gap: 3rem;
+    width: 100%;
+    justify-content: center;
+}
+
+.cart_details .each{
+    border: 2px solid white;
+    padding: 1rem 3rem;
+    color: var(--whiteFont);
+    font-weight: bold;
+    text-align: center;
+}
+
+.order_place_section{
+    margin-bottom: 3rem;
+    color: white;
+
+}
+
+.order_place_section h1{
+    text-align: center;
+    padding: .5rem 2rem;
+}
+
+.place_order_div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.checkout_container{
+    display: flex;
+    flex-direction: column;
+    height: 3rem;
+    margin: 1rem 3rem;
+}
+
+.place_order_div input, .input{
+    color: var(--whiteFont);
+    height: 3rem;
+    width: 35rem;
+    padding: .7rem 1rem;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid white;
+}
+
+.input option{
+    background-color: var(--mainColor);
+}
+
+.order_now{
+    margin-top: 3rem;
+}
+
+.order_now .submit-btn{
+    padding: .5rem 2rem;
+    border: 1px solid white;
+}
+
+.order_now .submit-btn:hover{
+    background-color: var(--RedColor);
+}
+
+.message i{
+    margin-left: 2rem;
+    align-items: center;
+}
+
+.message span{
+    background-color: var(--RedColor);
+    padding: 1rem 10rem;
+    font-size: 1.5rem;
+    color: var(--whiteFont);
+    font-weight: bold;
+    border-radius: 5rem 0rem 5rem 0rem;
+}
+
+
+.box-container{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 10px;
+}
+
+.horizontalLine{
+    width: 100%;
+    height: 3px;
+    opacity: 0.3;
+    background-color: white;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.box i{
+    margin-right: 10px;
+}
+
+.credit{
+    padding: 15px 0px;
+    text-align: center;
+    color: white;
+}
+
+.box, h3, p, i, a{
+    color: white;
+    text-decoration: none;
+}
+
+.box a:hover{
+    text-decoration: underline;
+}
+
+/** ---------------- Check Out Page ------------------------------------------------ **/
+
+
+
+@media screen and (max-width:890px) {
+
+
+    .cart_details .each{
+        padding: .5rem 2rem;
+        font-size: .7rem;
+    }
+
+    .menu-toggle-btn {
+        display: block !important;
+    }
+    .navigation-menu {
+        position: fixed;
+        width: 100%;
+        max-width: 400px;
+        background: #172b4d;
+        top: 90px;
+        right: 0;
+        display: none;
+        padding: 20px 40px;
+        box-sizing: border-box;
+    }
+    .navigation-menu::before {
+        content: "";
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #172b4d;
+        position: absolute;
+        top: -10px;
+        right: 10px;
+    }
+    .navigation-menu a {
+        display: block;
+        margin: 10px 0;
+    }
+    .navigation-menu.active {
+        display: block;
+    }
+    .show_banner_div h1 {
+        font-size: 6rem;
+    }
+    .show_banner_div p {
+        font-size: 2rem;
+        margin-top: -20px;
+    }
+    .social_Media a {
+        margin: 0px 20px;
+    }
+    .social_Media i {
+        font-size: 1.5rem;
+    }
+    
+    .sectionTwo div {
+        width: 100%;
+    }
+
+    .sectionTwo div p {
+        font-size: 20px;
+        margin-top: -60px;
+    }
+    
+    .sectionTwo div p span {
+        font-size: 30px;
+    }
+
+    
+}
+
+

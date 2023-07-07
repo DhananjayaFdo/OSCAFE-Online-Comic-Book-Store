@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+ :root {
+    --mainColor: #202020;
+    --whiteFont: #FFFFFF;
+    --RedColor: #e7242a;
+    --mainGreen: #4cb73a;
+    --mainYello: #e5d335;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Boogaloo';
+}
+
+body {
+    background-color: var(--mainColor);
+}
+
+.comic_display_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 13rem);
+    justify-content: space-evenly;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.comic_display{
+    padding: .5rem;
+    border: 2px solid var(--whiteFont);
+}
+
+img{
+    height: 16rem;
+    width: 11.7rem;
+}
+
+.comic_details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: .5rem .2rem;
+    font-size: 1.2rem;
+    color: var(--whiteFont);
+}
+
+.comic_btn_link{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.comic_btn input{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: var(--whiteFont);
+    font-size: 1rem;
+}
+
+
+.comic_btn input:hover{
+    cursor: pointer;
+}
+
+.comic_btn{
+    padding: .3rem .7rem;
+    background-color: var(--whiteFont);
+    border-radius: .3rem;
+}
+
+.comic_btn:hover{
+    cursor: pointer;
+}
+
+.cart_btn{
+    background-color: var(--RedColor);
+    color: var(--whiteFont);
+}
+
+.fav_btn{
+    background-color: var(--mainGreen);
+    color: var(--whiteFont);
+}
+
+.comic_remove_btn_con{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.comic_remove_btn{
+    color: var(--whiteFont);
+    background-color: var(--RedColor);
+    border: none;
+    outline: none; 
+    padding: .3rem 1rem;
+    font-size: 1rem;
+}
